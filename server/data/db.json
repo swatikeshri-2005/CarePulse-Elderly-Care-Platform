@@ -1,0 +1,489 @@
+{
+  "profiles": [
+    {
+      "id": "elder_1",
+      "name": "Margaret Wilson",
+      "age": 78,
+      "gender": "Female",
+      "bloodType": "O+",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=256",
+      "elderlyPasscode": "1234",
+      "address": "742 Evergreen Terrace, Springfield",
+      "emergencyContact": {
+        "name": "Sarah Wilson",
+        "relation": "Daughter",
+        "phone": "+1 (555) 234-5678",
+        "email": "sarah.wilson.care@gmail.com"
+      },
+      "secondaryContact": {
+        "name": "David Martinez, RN",
+        "relation": "Home Visiting Nurse",
+        "phone": "+1 (555) 876-5432",
+        "email": "david.martinez.rn@sunshinecare.org"
+      },
+      "primaryPhysician": "Dr. Eleanor Vance, MD (Cardiologist)",
+      "physicianContact": "+1 (555) 901-2345",
+      "diagnoses": [
+        "Hypertension (High BP)",
+        "Type 2 Diabetes",
+        "Mild Knee Osteoarthritis"
+      ],
+      "allergies": [
+        "Penicillin (Severe Rash)",
+        "Sulfa Antibiotics"
+      ],
+      "settings": {
+        "fontSize": "large",
+        "highContrast": false,
+        "voiceGuidance": true,
+        "emailAlerts": true,
+        "smsAlerts": true
+      }
+    },
+    {
+      "id": "elder_2",
+      "name": "Robert Jenkins",
+      "age": 82,
+      "gender": "Male",
+      "bloodType": "A+",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=256",
+      "elderlyPasscode": "2345",
+      "address": "128 Oakridge Lane, Springfield",
+      "emergencyContact": {
+        "name": "Michael Jenkins",
+        "relation": "Son",
+        "phone": "+1 (555) 345-6789",
+        "email": "m.jenkins@example.com"
+      },
+      "secondaryContact": {
+        "name": "Nurse Brenda Hall",
+        "relation": "Caregiver",
+        "phone": "+1 (555) 789-0123",
+        "email": "brenda.hall@carenetwork.org"
+      },
+      "primaryPhysician": "Dr. Marcus Brody, Geriatric Specialist",
+      "physicianContact": "+1 (555) 678-1234",
+      "diagnoses": [
+        "Post-Stroke Mobility Support",
+        "Atrial Fibrillation"
+      ],
+      "allergies": [
+        "NSAIDs (Aspirin/Ibuprofen)"
+      ],
+      "settings": {
+        "fontSize": "extra-large",
+        "highContrast": true,
+        "voiceGuidance": true,
+        "emailAlerts": true,
+        "smsAlerts": true
+      }
+    }
+  ],
+  "authorizedAccess": {
+    "caretakerPasscode": "4321",
+    "caretakerName": "David Martinez, RN",
+    "caretakerRole": "Registered Caregiver",
+    "familyPasscode": "9876",
+    "familyName": "Sarah Wilson",
+    "familyRole": "Daughter / Primary Family Guardian"
+  },
+  "medications": [
+    {
+      "id": "med_1",
+      "profileId": "elder_1",
+      "name": "Lisinopril",
+      "dosage": "10 mg",
+      "form": "Tablet",
+      "color": "#F472B6",
+      "shape": "round",
+      "purpose": "Blood Pressure Management",
+      "instructions": "Take once daily in the morning with a full glass of water.",
+      "withFood": "With or after food",
+      "frequency": "Daily",
+      "times": [
+        "08:00"
+      ],
+      "remainingPills": 22,
+      "totalPills": 30,
+      "refillThreshold": 7,
+      "prescribedBy": "Dr. Eleanor Vance",
+      "rxNumber": "RX-849201",
+      "active": true
+    },
+    {
+      "id": "med_2",
+      "profileId": "elder_1",
+      "name": "Metformin HCl",
+      "dosage": "500 mg",
+      "form": "Oval Tablet",
+      "color": "#60A5FA",
+      "shape": "oval",
+      "purpose": "Blood Sugar / Type 2 Diabetes",
+      "instructions": "Take twice daily with breakfast and dinner to prevent stomach upset.",
+      "withFood": "Take with meals",
+      "frequency": "Twice daily",
+      "times": [
+        "08:00",
+        "18:00"
+      ],
+      "remainingPills": 5,
+      "totalPills": 60,
+      "refillThreshold": 10,
+      "prescribedBy": "Dr. Eleanor Vance",
+      "rxNumber": "RX-772910",
+      "active": true
+    },
+    {
+      "id": "med_3",
+      "profileId": "elder_1",
+      "name": "Glucosamine + Chondroitin",
+      "dosage": "1500 mg",
+      "form": "Capsule",
+      "color": "#FBBF24",
+      "shape": "capsule",
+      "purpose": "Joint Flexibility & Knee Cartilage",
+      "instructions": "Take once daily with lunch.",
+      "withFood": "Take with lunch",
+      "frequency": "Daily",
+      "times": [
+        "13:00"
+      ],
+      "remainingPills": 41,
+      "totalPills": 60,
+      "refillThreshold": 10,
+      "prescribedBy": "Dr. Marcus Brody",
+      "rxNumber": "OTC-3391",
+      "active": true
+    },
+    {
+      "id": "med_4",
+      "profileId": "elder_1",
+      "name": "Atorvastatin Calcium",
+      "dosage": "20 mg",
+      "form": "Tablet",
+      "color": "#A78BFA",
+      "shape": "oval",
+      "purpose": "Cholesterol & Vascular Health",
+      "instructions": "Take at bedtime.",
+      "withFood": "At bedtime",
+      "frequency": "Nightly",
+      "times": [
+        "21:00"
+      ],
+      "remainingPills": 17,
+      "totalPills": 30,
+      "refillThreshold": 7,
+      "prescribedBy": "Dr. Eleanor Vance",
+      "rxNumber": "RX-441829",
+      "active": true
+    },
+    {
+      "id": "med_5",
+      "profileId": "elder_1",
+      "name": "Aspirin (Low Dose)",
+      "dosage": "81 mg",
+      "form": "Chewable / Mini Tablet",
+      "color": "#FB923C",
+      "shape": "round",
+      "purpose": "Cardiovascular Protection",
+      "instructions": "Take in the morning with food.",
+      "withFood": "After food",
+      "frequency": "Daily",
+      "times": [
+        "08:00"
+      ],
+      "remainingPills": 65,
+      "totalPills": 100,
+      "refillThreshold": 15,
+      "prescribedBy": "Dr. Eleanor Vance",
+      "rxNumber": "OTC-9012",
+      "active": true
+    }
+  ],
+  "adherenceLogs": [
+    {
+      "id": "log_1794719492612",
+      "profileId": "elder_1",
+      "medicationId": "med_4",
+      "medicationName": "Atorvastatin Calcium 20 mg",
+      "scheduledTime": "21:00",
+      "scheduledDate": "2026-11-15",
+      "status": "taken",
+      "timestamp": "2026-11-15T05:11:32.612Z",
+      "loggedBy": "Margaret Wilson (Elder)",
+      "notes": "Taken via CarePulse interface (morning)"
+    },
+    {
+      "id": "log_1794719485000",
+      "profileId": "elder_1",
+      "medicationId": "med_3",
+      "medicationName": "Glucosamine + Chondroitin 1500 mg",
+      "scheduledTime": "13:00",
+      "scheduledDate": "2026-11-15",
+      "status": "taken",
+      "timestamp": "2026-11-15T05:11:25.000Z",
+      "loggedBy": "Margaret Wilson (Elder)",
+      "notes": "Taken via CarePulse interface (morning)"
+    },
+    {
+      "id": "log_1",
+      "profileId": "elder_1",
+      "medicationId": "med_1",
+      "medicationName": "Lisinopril 10 mg",
+      "scheduledTime": "08:00",
+      "scheduledDate": "2026-11-15",
+      "status": "taken",
+      "timestamp": "2026-11-15T08:06:21+05:30",
+      "loggedBy": "Margaret Wilson (Elder)",
+      "notes": "Taken with breakfast and warm water"
+    },
+    {
+      "id": "log_2",
+      "profileId": "elder_1",
+      "medicationId": "med_2",
+      "medicationName": "Metformin HCl 500 mg",
+      "scheduledTime": "08:00",
+      "scheduledDate": "2026-11-15",
+      "status": "taken",
+      "timestamp": "2026-11-15T08:07:05+05:30",
+      "loggedBy": "Margaret Wilson (Elder)",
+      "notes": "Breakfast completed"
+    },
+    {
+      "id": "log_3",
+      "profileId": "elder_1",
+      "medicationId": "med_5",
+      "medicationName": "Aspirin (Low Dose) 81 mg",
+      "scheduledTime": "08:00",
+      "scheduledDate": "2026-11-15",
+      "status": "taken",
+      "timestamp": "2026-11-15T08:07:30+05:30",
+      "loggedBy": "Margaret Wilson (Elder)",
+      "notes": "Logged on tablet"
+    },
+    {
+      "id": "log_4",
+      "profileId": "elder_1",
+      "medicationId": "med_3",
+      "medicationName": "Glucosamine + Chondroitin 1500 mg",
+      "scheduledTime": "13:00",
+      "scheduledDate": "2026-11-15",
+      "status": "pending",
+      "timestamp": null,
+      "loggedBy": null,
+      "notes": "Upcoming afternoon dose"
+    },
+    {
+      "id": "log_5",
+      "profileId": "elder_1",
+      "medicationId": "med_2",
+      "medicationName": "Metformin HCl 500 mg (Evening)",
+      "scheduledTime": "18:00",
+      "scheduledDate": "2026-11-15",
+      "status": "pending",
+      "timestamp": null,
+      "loggedBy": null,
+      "notes": "Upcoming evening dose"
+    },
+    {
+      "id": "log_6",
+      "profileId": "elder_1",
+      "medicationId": "med_4",
+      "medicationName": "Atorvastatin Calcium 20 mg",
+      "scheduledTime": "21:00",
+      "scheduledDate": "2026-11-15",
+      "status": "pending",
+      "timestamp": null,
+      "loggedBy": null,
+      "notes": "Upcoming bedtime dose"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "apt_1",
+      "profileId": "elder_1",
+      "doctorName": "Dr. Eleanor Vance, MD",
+      "specialty": "Cardiology & Vascular Health",
+      "clinic": "St. Jude Heart Center, Suite 402",
+      "address": "450 Medical Way, Springfield",
+      "dateTime": "2026-11-18T10:30:00+05:30",
+      "duration": "45 mins",
+      "purpose": "Quarterly ECG Follow-up & Blood Pressure Regimen Review",
+      "prepNotes": "Fast 4 hours prior. Bring daily BP log book and current prescription bottles.",
+      "telehealth": false,
+      "status": "confirmed",
+      "companionAssigned": "Sarah Wilson (Daughter)"
+    },
+    {
+      "id": "apt_2",
+      "profileId": "elder_1",
+      "doctorName": "Dr. Alan Chen, OD",
+      "specialty": "Ophthalmology / Diabetic Eye Care",
+      "clinic": "Springfield Vision & Eye Center",
+      "address": "812 Clearview Ave, Springfield",
+      "dateTime": "2026-11-24T14:15:00+05:30",
+      "duration": "30 mins",
+      "purpose": "Annual Diabetic Retinopathy Screen & Dilated Pupil Exam",
+      "prepNotes": "Arrange ride home as pupils will be dilated for 2-3 hours.",
+      "telehealth": false,
+      "status": "confirmed",
+      "companionAssigned": "David Martinez, RN"
+    },
+    {
+      "id": "apt_3",
+      "profileId": "elder_1",
+      "doctorName": "Dr. Marcus Brody",
+      "specialty": "Geriatric Care & Orthopedics",
+      "clinic": "Springfield Wellness Clinic",
+      "address": "100 Community Blvd",
+      "dateTime": "2026-10-22T11:00:00+05:30",
+      "duration": "30 mins",
+      "purpose": "Right knee osteoarthritis check & mobility review",
+      "prepNotes": "Completed",
+      "telehealth": false,
+      "status": "completed",
+      "summary": "Joint mobility intact. Recommended continued Glucosamine and 20 min morning gentle walking."
+    }
+  ],
+  "routines": [
+    {
+      "id": "rt_1",
+      "profileId": "elder_1",
+      "title": "Morning Blood Pressure & Heart Rate Check",
+      "time": "08:30",
+      "category": "vitals",
+      "icon": "Activity",
+      "completedToday": true,
+      "target": "BP < 130/80 mmHg"
+    },
+    {
+      "id": "rt_2",
+      "profileId": "elder_1",
+      "title": "Hydration Goal (8 Glasses of Water)",
+      "time": "Throughout the day",
+      "category": "hydration",
+      "icon": "Droplets",
+      "progress": 5,
+      "total": 8,
+      "completedToday": false
+    },
+    {
+      "id": "rt_3",
+      "profileId": "elder_1",
+      "title": "Gentle Garden Walk & Mobility Routine",
+      "time": "10:00",
+      "category": "exercise",
+      "icon": "Footprints",
+      "duration": "20 mins",
+      "completedToday": true
+    },
+    {
+      "id": "rt_4",
+      "profileId": "elder_1",
+      "title": "Evening Blood Glucose Check (Post-Dinner)",
+      "time": "19:30",
+      "category": "vitals",
+      "icon": "Target",
+      "completedToday": false,
+      "target": "Sugar < 140 mg/dL"
+    }
+  ],
+  "vitalsLogs": [
+    {
+      "id": "v_1",
+      "profileId": "elder_1",
+      "type": "blood_pressure",
+      "systolic": 124,
+      "diastolic": 78,
+      "pulse": 71,
+      "timestamp": "2026-11-15T08:32:00+05:30",
+      "status": "normal",
+      "loggedBy": "David Martinez, RN"
+    },
+    {
+      "id": "v_2",
+      "profileId": "elder_1",
+      "type": "blood_sugar",
+      "value": 112,
+      "unit": "mg/dL",
+      "context": "Fasting Morning",
+      "timestamp": "2026-11-15T07:45:00+05:30",
+      "status": "optimal",
+      "loggedBy": "Margaret Wilson"
+    },
+    {
+      "id": "v_3",
+      "profileId": "elder_1",
+      "type": "wellness_mood",
+      "rating": 5,
+      "mood": "Feeling energized and happy",
+      "notes": "Had a restful night, knee feels much better today.",
+      "timestamp": "2026-11-15T09:10:00+05:30"
+    }
+  ],
+  "cheerNotes": [
+    {
+      "id": "cn_1",
+      "profileId": "elder_1",
+      "senderName": "Sarah (Daughter)",
+      "message": "Good morning Mom! So proud of your 14-day medication streak! I will bring fresh strawberries tomorrow afternoon. Love you! ❤️",
+      "timestamp": "2026-11-15T08:15:00+05:30",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=120"
+    },
+    {
+      "id": "cn_2",
+      "profileId": "elder_1",
+      "senderName": "Tommy (Grandson, 10)",
+      "message": "Hi Nana! I scored a goal in soccer practice today! Can't wait to show you my trophy on Sunday! ⚽🏆",
+      "timestamp": "2026-11-14T17:30:00+05:30",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=120"
+    }
+  ],
+  "dispatchedEmails": [
+    {
+      "id": "em_1794719478760",
+      "profileId": "elder_1",
+      "to": "sarah.wilson.care@gmail.com",
+      "toName": "Sarah Wilson",
+      "subject": "✅ CarePulse Update: Margaret Wilson took Glucosamine + Chondroitin 1500 mg",
+      "type": "dose_taken",
+      "timestamp": "2026-11-15T05:11:18.760Z",
+      "status": "Delivered",
+      "content": "Great news! Margaret Wilson took their Glucosamine + Chondroitin 1500 mg on 10:41 am.\n\nLogged by: Margaret Wilson (Elder)\nRemaining supply: 41 pills\nDaily Adherence: Active & on track!",
+      "html": "<div style=\"font-family: sans-serif; padding: 20px; line-height: 1.6; color: #1e293b;\">\n      <div style=\"background: #0284c7; color: white; padding: 15px 20px; border-radius: 8px 8px 0 0;\">\n        <h2 style=\"margin: 0;\">CarePulse Health Alert</h2>\n        <p style=\"margin: 4px 0 0 0; opacity: 0.9;\">Patient: Margaret Wilson</p>\n      </div>\n      <div style=\"border: 1px solid #e2e8f0; border-top: none; padding: 20px; border-radius: 0 0 8px 8px; background: white;\">\n        <p style=\"white-space: pre-wrap; font-size: 16px;\">Great news! Margaret Wilson took their Glucosamine + Chondroitin 1500 mg on 10:41 am.\n\nLogged by: Margaret Wilson (Elder)\nRemaining supply: 41 pills\nDaily Adherence: Active & on track!</p>\n        <hr style=\"border: 0; border-top: 1px solid #e2e8f0; margin: 20px 0;\" />\n        <p style=\"font-size: 13px; color: #64748b; margin: 0;\">CarePulse Elderly Care & Medication Management Platform • Shared Ecosystem</p>\n      </div>\n    </div>"
+    },
+    {
+      "id": "em_1",
+      "profileId": "elder_1",
+      "to": "sarah.wilson.care@gmail.com",
+      "toName": "Sarah Wilson (Family Guardian)",
+      "subject": "CarePulse Daily Update: Margaret completed morning medications (3/3)",
+      "type": "daily_summary",
+      "timestamp": "2026-11-15T08:08:00+05:30",
+      "status": "Delivered",
+      "content": "Dear Sarah,\n\nGreat news! Margaret Wilson has successfully taken all 3 scheduled morning medications (Lisinopril 10mg, Metformin 500mg, and Aspirin 81mg) on time at 8:07 AM.\n\nCurrent Adherence Streak: 14 Consecutive Days (98.4% Adherence).\n\nDaily vitals check recorded Blood Pressure at 124/78 mmHg (Normal Range).\n\nWarm regards,\nCarePulse Automated Health Guardian"
+    },
+    {
+      "id": "em_2",
+      "profileId": "elder_1",
+      "to": "david.martinez.rn@sunshinecare.org",
+      "toName": "David Martinez, RN (Caregiver)",
+      "subject": "⚠️ Refill Alert: Metformin HCl 500mg is low (5 pills remaining)",
+      "type": "low_stock",
+      "timestamp": "2026-11-15T08:08:05+05:30",
+      "status": "Delivered",
+      "content": "Alert for Nurse David Martinez:\n\nPatient: Margaret Wilson (Age 78, RX-772910)\nMedication: Metformin HCl 500 mg\nRemaining Supply: 5 pills (Approx. 2.5 days remaining based on 2 pills/day).\n\nRecommended Action: A refill request has been queued for Dr. Eleanor Vance's clinic. Please verify and confirm with Walgreens Pharmacy #4410."
+    },
+    {
+      "id": "em_3",
+      "profileId": "elder_1",
+      "to": "sarah.wilson.care@gmail.com",
+      "toName": "Sarah Wilson",
+      "subject": "📅 Appointment Reminder: Dr. Vance Cardiology Visit in 3 Days",
+      "type": "appointment_reminder",
+      "timestamp": "2026-11-15T07:00:00+05:30",
+      "status": "Delivered",
+      "content": "Dear Sarah,\n\nThis is a friendly reminder that Margaret has an upcoming cardiology appointment with Dr. Eleanor Vance on Wednesday, Nov 18, 2026 at 10:30 AM at St. Jude Heart Center.\n\nPreparation: Please ensure Margaret fasts 4 hours prior and brings her daily BP reading log.\n\nThank you for keeping Margaret safe and healthy!"
+    }
+  ]
+}
