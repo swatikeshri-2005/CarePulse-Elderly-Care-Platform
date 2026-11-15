@@ -6,7 +6,7 @@
 ---
 
 ## 🚀 Live Application URL
-- **Local Web App:** [http://localhost:3001](http://localhost:3001)
+- **Local Web App:** https://carepulse-elderly-care-platform-2.onrender.com/
 
 ---
 
@@ -107,4 +107,4 @@ npm install
 node server/index.js
 ```
 
-Open [http://localhost:3001](http://localhost:3001) in any modern web browser.
+Open https://carepulse-elderly-care-platform-2.onrender.com/
