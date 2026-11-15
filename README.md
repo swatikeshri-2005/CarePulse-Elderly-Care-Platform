@@ -6,7 +6,7 @@
 ---
 
 ## 🚀 Live Application URL
-- **Local Web App:** https://carepulse-elderly-care-platform-2.onrender.com/
+- **Render App:** https://carepulse-elderly-care-platform-2.onrender.com/
 
 ---
 
